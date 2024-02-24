@@ -321,15 +321,14 @@ class Utility(commands.Cog):
         """Shows information about this bot."""
         embed = discord.Embed(color=self.bot.main_color, timestamp=discord.utils.utcnow())
         embed.set_author(
-            name="Modmail - About",
+            name="Modmail - Information",
             icon_url=self.bot.user.display_avatar.url,
             url="https://discord.gg/F34cRU8",
         )
         embed.set_thumbnail(url=self.bot.user.display_avatar.url)
 
         desc = "This is an open source Discord bot that serves as a means for "
-        desc += "members to easily communicate with server administrators in "
-        desc += "an organised manner."
+        desc += "members to easily receive support by administartors. "
         embed.description = desc
 
         embed.add_field(name="Uptime", value=self.bot.uptime)
@@ -358,7 +357,8 @@ class Utility(commands.Cog):
 
         embed.add_field(
             name="Modmail",
-            value="Open source bot on [GitHub](https://github.com/modmail-dev/modmail/) ",
+            value="Open source bot on [GitHub](https://github.com/khakers/OpenModmail/tree/oldstable), stable version "
+            "by <@184473972446986240> (khakers)",
             inline=False,
 
         )
